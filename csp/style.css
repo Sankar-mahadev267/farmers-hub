@@ -1,0 +1,1309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /* align-items: center; */
+    justify-content: space-between;
+    position: fixed;
+    z-index: 978;
+}
+.logo{
+    cursor: pointer;
+    margin-left: 10px;
+}
+.logo img{
+    width: 100px;
+}
+.linebar{
+    display: inline-flex;
+    margin-top: 20px;
+}
+.linebar ul{
+    list-style: none;
+    display: flex;
+    margin: 0 60px 0 0;
+}
+.linebar .services{
+    padding-bottom: 35px;
+}
+.linebar ul a{
+    margin: 0 50px;
+    text-decoration: none;
+    color: rgb(0, 150, 0);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.15s;
+}
+.linebar ul a:hover{
+    opacity: 0.5;
+}
+.dropdown{
+    list-style: none;
+    background: white;
+    margin-top: 12px;
+    height: 110px;
+    width: 165px;
+    border-radius: 5px;
+    box-shadow: 0 10px 5px rgba(0,0,0,0.5);
+    display: none;
+}
+.dropdown ul{
+    display: inline-block;
+}
+.dropdown ul li{
+    margin: 10px 0;
+}
+.linebar li:hover .dropdown{
+    display: block;
+}
+.sign-in{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+.sign-in button{
+    padding: 10px;
+    margin: 0 10px;
+    background: rgb(0,200, 0);
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    transition:  opacity 0.15s;
+
+}
+.sign-in button:hover{
+    opacity: 0.8;
+}
+.sign-in button:active{
+    opacity: 0.5;
+}
+.phsign-in{
+    padding:5px 2px;
+    background: rgb(0,200, 0);
+    color: white;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    transition:  opacity 0.15s;
+    font-size: 12px;
+}
+.phsign-in:hover{
+    opacity: 0.8;
+}
+.phsign-in:active{
+    opacity: 0.5;
+}
+
+.bi-list{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 30px;
+    color: rgb(0, 150, 0);
+    cursor: pointer;
+    display: none;
+}
+.bi-x{
+    font-size: 30px;
+    color: rgb(0,150,0);
+    cursor: pointer;
+}
+.sidebar{
+    width: 150px;
+    height: 100vh;
+    background:white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    top: 0;
+    right: 0;
+    z-index: 980;
+    position: fixed;
+    animation-name: slide-left;
+    animation-duration: 0.15s;
+    display: none;
+}
+@keyframes slide-left{
+    from{
+        transform: translateX(250px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar li{
+    margin:30px 25%;
+}
+.sidebar a{
+    padding: 10px;
+    text-decoration: none;
+    color: green;
+
+}
+
+
+
+.d1{
+    background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0.6)),url(banner.jpg); 
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.banner{
+
+    width: 30%;
+    height: auto;
+
+}
+.banner h1{
+    text-transform: capitalize;
+    font-size: 45px;
+    padding: 0 10px;
+    color: white;
+}
+.banner p{
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+.banner button{
+    padding: 15px 25px;
+    margin: 0 10px;
+    background: rgb(0,180,0);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius:25px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.banner button:hover{
+    background: rgba(0,200,0);
+}
+    
+.banner button:active{
+    opacity: 0.5;
+}
+.d2{
+    width: 100%;
+    height: 200px;
+    background: white;
+    color: black;
+}
+.p{
+    position: absolute;
+    top: 500px;
+    left: 380px;
+    width: 220px;
+    height: 250px;
+    background: blanchedalmond;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    
+}
+.s{
+    position: absolute;
+    top: 500px;
+    right: 380px;
+    width: 220px;
+    height: 250px;
+    background: blanchedalmond;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+
+}
+.d2 .bi{
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 38%;
+}
+.d2 h3{
+    padding: 10px;
+}
+.d2 p{
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.d3{
+    width: 100%;
+    background: white;
+    padding: 0 40px;
+
+}
+.d3 .roll{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d3 .pest-card{
+    background: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(20% - 40px);
+    height: auto;
+    display:block;
+    justify-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+.d3 .pest-card:hover{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.d3 .pest-card .img{
+    display: flex;
+    justify-content: center;
+}
+.d3 .pest-card img{
+    height: 150px; 
+    margin-bottom: 20px;   
+}
+.d3 .pest-card .company{
+    margin: 10px 0;
+    opacity: 0.5;
+}
+.more{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.more button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+.more button:hover{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.d31{
+    width: 100%;
+    background: white;
+    padding: 0 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.d31 .pest-card{
+    background: white;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    width: calc(20% - 40px);
+    height: auto;
+    display:block;
+    justify-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+.d31 .pest-card:hover{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.d31 .pest-card .img{
+    display: flex;
+    justify-content: center;
+}
+.d31 .pest-card img{
+    height: 150px; 
+    margin-bottom: 20px;   
+}
+.d31 .pest-card .company{
+    margin: 10px 0;
+    opacity: 0.5;
+}
+
+
+.d4{
+    width: 100%;
+    background: white;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.scheme-card{
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    width: calc(25% - 40px);
+    min-height: 250px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+
+.scheme-card img{
+    width: 100%;
+    height: auto;
+}
+.scheme-card p{
+    margin: 10px;
+    
+}
+.scheme-card button{
+    background: rgb(95, 102, 235);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.scheme-card button:hover{
+    opacity: 0.8;
+}
+
+
+
+.d5{
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 20px 40px;
+}
+.contact{
+    background: white;
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 6px rgba(0,0,0,0.3); */
+    padding: 10px;
+    margin: 20px 0;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-items: center;
+}
+.contact img{
+    border-radius: 10px;
+    width: 40%;
+    margin: 0 20px;
+    
+}
+.contact p{
+    padding: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.d5 input, .d5 textarea{
+    padding: 10px 20px;
+    margin: 10px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 18px;
+}
+.d5 textarea{
+    width: 370px;
+    height: 100px;
+}
+.contact a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.contact btn{
+    background: transparent;
+    padding: 8px 20px;
+    margin: 20px;
+    border-radius: 18px;
+    color: black;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+.contact btn:hover{
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+.d6{
+    padding: 20px 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.d6 .roll{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.d6 .feedback-card{
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(20% - 40px);
+    height: auto;
+    font-size: 14px;
+    padding: 10px;
+    margin: 20px;
+}
+.feedback-card .img{
+    display: flex;
+    justify-content: center;
+}
+.feedback-card img{
+    width: 170px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 10px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.d7{
+    width: 100%;
+    height: 95vh;
+    padding: 20px;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    background: url(contact.jpg);
+    background-position: right;
+    background-size: cover;
+}
+.d7 fieldset{
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .d7 img{
+   width: 40%;
+   height: 100%;
+   object-position: center;
+   object-fit: contain;
+} */
+.d7 input,.d7 textarea{
+    outline: none;
+    margin: 20px 10px;
+    background: transparent;
+    padding: 10px;
+    border: 2px solid rgb(0,0,0,0.5);
+    border-radius: 18px;
+}
+.d7 input::placeholder,.d7 textarea::placeholder{
+    color: black;
+}
+.d7 legend{
+    font-size: 40px;
+}
+.d7 input{
+    width: 280px;
+}
+.d7 textarea{
+    width: 600px;
+    height: 150px;
+}
+.d7 a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.d7 btn{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: rgb(62, 62, 250);
+    color: white;
+    cursor: pointer;
+    transition:opacity 0.15s;
+}
+.d7 btn:hover{
+    opacity: 0.7;
+}
+.d7 btn:active{
+    opacity: 0.5;
+}
+
+
+.d8{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.d8 .flex{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.d8 .wrapper{
+    padding: 20px;
+    background: white;
+    margin-top: 140px;
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    position: relative;
+      
+}
+.pest-info1 {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto; 
+}
+.pest-info1::-webkit-scrollbar{
+    width: 0;
+}
+.pest-info1 .img{
+    display: flex;
+    justify-content: center;
+}
+.pest-info1 img{
+    height: 150px; 
+    margin-bottom: 20px;   
+}
+.pest-info1 .company{
+    margin: 10px 0;
+    opacity: 0.5;
+}
+
+.pest-info1 .bi{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 33px;
+    color: black;
+    cursor:pointer;
+}
+.d9{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.d9 .flex{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.d9 .wrapper{
+    padding: 20px;
+    background: white;
+    margin-top: 140px;
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    position: relative;
+      
+}
+.pest-info {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto; 
+   
+}
+.pest-info::-webkit-scrollbar{
+    width: 0;
+}
+.pest-info .img{
+    display: flex;
+    justify-content: center;
+}
+.pest-info img{
+    height: 150px; 
+    margin-bottom: 20px;   
+}
+.pest-info .company{
+    margin: 10px 0;
+    opacity: 0.5;
+}
+
+.pest-info .bi{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 33px;
+    color: black;
+    cursor:pointer;
+}
+
+
+.d10{
+    background: white;
+    padding: 40px;
+}
+.d10 priceform{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d10 priceform{
+    margin: 30px 10px;
+}
+.d10 select{
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgba(0,200,0,0.5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.d10 priceform button{
+    margin: 5px;
+    height: 30px;
+    width: 100px;
+    background:rgba(0,240,0);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.d10 priceform button:hover{
+    opacity: 0.5;
+}
+.d10 .d10-1{
+    display: flex;
+    justify-content: space-between;
+}
+.d10 .price-desc{
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.d10 .sell-buy{
+    padding: 20px;
+    margin:10px;
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.sell-buy button{
+    margin: 20px;
+    padding: 10px 30px;
+    background: blanchedalmond;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.sell-buy button:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.d10 p{
+    padding: 10px 20px 20px 20px;
+    font-size: 18px;
+}
+.d10 table td{
+    padding: 5px 20px;
+}
+.d11{
+    background: white;
+    padding: 20px;
+}
+
+
+.d12{
+    background: white;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+.d13{
+    background: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 50px;
+}
+.weather-info{
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    width: 40%;
+}
+.weather-info{
+    padding: 20px;
+}
+.title{
+    padding: 20px;
+    display: none;
+
+}
+.weather{
+    width: 380px;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgb(0, 254, 186),rgb(91, 84, 138));
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 20px;
+}
+.search{
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    height: 40px;
+    width: 80%;
+    padding: 10px 15px;
+    outline: none;
+    border:none;
+    border-radius: 18px;
+
+}
+
+.search button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+}
+.search button img{
+    width: 22px;
+    cursor: pointer;
+}
+.result{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.d12 .icon{
+    width: 150px;
+    padding: 10px;
+}
+.temp{
+    font-size: 60px;
+    padding: 10px;
+
+}
+.city{
+   font-size: 30px;
+   padding: 10px;
+}
+.wh{
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wind{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wh img{
+    width: 60px;
+    padding: 5px;
+}
+.wh h1{
+    font-size: 16px;
+    padding: 5px;
+}
+.humidity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.error{
+    padding:0 25px 25px 25px;
+}
+
+
+
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background: whitesmoke;
+    padding: 20px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.foot a{
+    color: black;
+    text-decoration: none;  
+    padding: 10px;
+    border-radius: 2px;
+    transition: 0.15s;
+    opacity: 0.5;
+}
+.foot a:hover{
+    /* background:rgb(101, 101, 241);
+    color: white;  */
+    opacity: 1;
+    
+}
+.footer-mid{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    width: 100px;
+    height: 2px;
+    background: green;
+    margin-top: 30px;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social .bi{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 18px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.social .bi:hover{
+    transform: translateY(-5px);
+}
+.navbar .nav-page{
+    font-weight: 900;
+}
+.foot .nav-page{
+    opacity: 1;
+}
+.pestlist{
+    width: 100%;
+    background: white;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.pestlist option{
+    margin: 10px;
+    padding: 5px 15px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    cursor: pointer;
+}
+.pestlist option:hover{
+    background: rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width:1200px) {
+    .d3 .roll{
+        flex-wrap: nowrap; 
+        overflow: auto;
+    }
+    .d3 .pest-card{
+        width: 200px;
+    }
+    .roll::-webkit-scrollbar{
+        width: 0;
+    } 
+
+    .d6 .roll{
+        flex-wrap: nowrap; 
+        overflow: auto;
+    }
+    .d6 .feedback-card{
+        width: 600px;
+        margin: 10px;
+    }
+
+    .d2 .p{
+        left: 200px;
+    }
+    .d2 .s{
+        right: 200px;
+    }
+    .scheme-card {
+       font-size: 14px;   
+    }
+    .scheme-card button{
+        padding: 5px 10px;
+    }
+    .d31 .pest-card{
+        padding: 10px;
+    }
+
+} 
+@media (max-width:1100px){
+    .d31 .pest-card{
+        width: calc(25% - 40px);
+    }
+    .d6{
+        font-size: 14px;
+    }
+    .d5 textarea{
+        width: 270px;
+    }
+    
+} 
+
+
+@media (max-width:870px) {
+   
+    .d2 .p{
+        left: 100px;
+    }
+    .d2 .s{
+        right: 100px;
+    }
+    .scheme-card{
+        width: calc(33% - 40px);
+    }
+    .contact img{
+        width: 50%;
+    }
+    
+    .d31 .pest-card{
+        width: calc(33% - 40px);
+    }
+} 
+@media (max-width:788px) {
+    .bi-list{
+        display:block;
+    }
+    .on-mobile{
+        display: none;
+    }
+    .weather-info{
+        margin: 10px;
+    }
+}
+@media (max-width:768px) {
+    .bi-list{
+        display:block;
+    }
+    .on-mobile{
+        display: none;
+    }
+    .d1{
+        background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(banner.jpg); 
+        background-position: center;
+        background-size: cover;
+    }
+    .banner{
+        width: 40%;
+    }
+    .scheme-card{
+        margin: 10px;
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    }
+
+    .scheme-card{
+        width: calc(50% - 20px);
+    }
+    .d31{
+        padding: 0 20px;
+    }
+    .d11{
+        padding: 15px;
+    }
+    .d10 .d10-1{
+        display: block;
+    }
+    .d10 .d10-1 div{
+        width: 100%;
+    }
+    .d7 input{
+        width: 400px;
+    }
+    .d7 textarea{
+        width: 400px;
+    }
+    .d8 .wrapper{
+        width: 80%;
+    }
+    .d9 .wrapper{
+        width: 80%;
+    }
+    .weather-info{
+        display: none;
+    }
+    .title{
+        display: block;
+    }
+}
+@media (max-width:660px) {
+   
+    .d2 .p{
+        left: 30px;
+    }
+    .d2 .s{
+        right: 30px;
+    }
+    .d1{
+        background:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(banner.jpg); 
+        background-position: center;
+        background-size: cover;
+    }
+    .banner{
+        width: 50%;
+    }
+    .scheme-card p{
+        margin: 5px;
+     }
+    .scheme-card img{
+       height: 50%;
+    }
+    .scheme-card button{
+        margin: 5px;
+    }
+    .d5 textarea{
+       width: 200px;
+       height: 70px;
+    }
+    .contact p{
+        padding: 10px;
+    }
+    
+    .d31 .pest-card{
+        width: calc(50% - 40px);
+    }
+} 
+@media (max-width:590px) {
+    .contact img{
+        display: none;
+    }
+    .d5 textarea{
+        width: 370px;
+        height: 100px;
+    }
+}
+@media (max-width:520px) {
+    .d2{
+        height: 500px;
+    }
+    .d2 .p{
+        left: 26%;
+    }
+    .d2 .s{
+        left: 26%;
+        top: 770px;
+    }
+    .d1{
+        background:linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(banner.jpg); 
+        background-position: center;
+        background-size: cover;
+    }
+    .banner{
+        width: 90%;
+    }
+    .d4{
+        padding: 20px;
+    }
+    .scheme-card{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .d7 input{
+        width: 300px;
+    }
+    .d7 textarea{
+        width: 300px;
+    }
+
+} 
+
+@media (max-width:475px) {
+   
+    .contact img{
+        display: none;
+    }
+    .d5{
+        padding: 20px;
+    }
+    .d5 textarea{
+        width: 270px;
+        height: 100px;
+    }
+    .footer{
+        padding: 10px;
+    }
+    .foot a{
+        padding: 5px;
+    }
+    .d31 .pest-card img{
+        height: 100px; 
+        margin-bottom: 10px;   
+    }
+    .d3{
+        padding: 20px;
+    }
+    .d3 .pest-card img{
+        margin-bottom: 10px;   
+    }
+    .d3 .pest-card{
+        margin: 10px;
+        font-size: 14px;
+        height: 250px;
+    }
+    .scheme-card img{
+        height: 100px;
+    }
+    .scheme-card{
+        min-height: 200px;
+    }
+    .d11{
+        padding: 10px;
+    }
+    .d12{
+        padding: 10px;
+    }
+    .d13{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    .weather{
+        width: 340px;
+    }
+}
+@media (max-width:400px) {
+    .d10 .d10-1{
+        font-size: 14px;
+    }
+    .d10 table td{
+        padding: 5px 10px;
+    }
+    .d7 input{
+        width: 280px;
+    }
+    .d7 textarea{
+        width: 280px;
+    }
+    .d8 .wrapper{
+        width: 95%;
+    }
+    .d9 .wrapper{
+        width: 95%;
+    }
+}
+
+@media (max-width:375px) {
+   
+    .d2 .p{
+        left: 23%;
+    }
+    .d2 .s{
+        left: 23%;
+    }
+    .d5{
+        padding: 10px;
+    }
+    .foot a{
+        font-size: 14px;
+    }
+    .d31 .pest-card img{
+        height: 80px; 
+        margin-bottom: 5px;   
+    }
+    .d31{
+        font-size: 12px;
+    }
+    .d7{
+        padding: 10px;
+    }
+    .d7 input{
+        width: 260px;
+    }
+    .d7 textarea{
+        width: 260px;
+    }
+    .weather{
+        width: 300px;
+    }
+    .d12{
+        padding: 5px;
+    }
+    
+}
+@media (max-width:360px){
+    .d2 .p{
+        left: 20%;
+    }
+    .d2 .s{
+        left: 20%;
+    }
+    .scheme-card img{
+        height: 80px;
+    }
+    .d10 table td{
+        padding: 5px 5px;
+    }
+}
+@media (max-width:340px){
+    .d2 .p{
+        left: 18%;
+    }
+    .d2 .s{
+        left: 18%;
+    }
+    .d7 input{
+        width: 240px;
+    }
+    .d7 textarea{
+        width: 240px;
+    }
+}

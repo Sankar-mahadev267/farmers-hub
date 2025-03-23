@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png">
+    <title>Farmer's hub</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="logo.jpg" alt="Farmer's hub"></div>
+        <div class="linebar on-mobile">
+            <ul>
+                <li><a href="home.jsp">home</a></li>
+                <li class="services"><a class="nav-page" href="#">services &#x25BE</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="schemes.jsp">schemes</a></li>
+                            <li><a href="prices.jsp">prices</a></li>
+                            <li><a class="nav-page" href="#">pests</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="about.jsp">About</a></li>
+                <li><a href="contact.jsp">contact</a></li>
+            </ul>
+            <div class="profile"><i class="bi bi-person-fill" id="pro-open"></i></a></div>
+        </div>
+        <i class="bi bi-list" id="list"></i>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><i class="bi bi-x" id="close"></i></li>
+            <li><a href="home.jsp">home</a></li>
+            <li><a href="schemes.jsp">schemes</a></li>
+            <li><a href="prices.jsp">prices</a></li>
+            <li><a class="nav-page" href="#">pests</a></li>
+            <li><a href="about.jsp">About</a></li>
+            <li><a href="contact.jsp">contact</a></li>
+            <li id="pro-open1"><a>Profile</a></li>
+        </ul>
+    </div>
+    <br><br><br>
+    <form class="pestlist">
+        <option id="aphids">aphids</option>
+        <option id="thrips">thrips</option>
+        <option id="whiteflies">whiteflies</option>
+        <option id="spidermites">spidermites</option>
+        <option id="caterpillars">caterpillars</option>
+        <option id="armyworm">armyworm</option>
+        <option id="leafborers">leafborers</option>
+        <option id="loopers">loopers</option>
+        <option id="cutworm">cutworm</option>
+        <option id="leafworm">leafworm</option>
+        <option id="rootrot">rootrot</option>
+        <option id="stemborers">stemborers</option>
+        <option id="leaffolder">leaffolder</option>
+        <option id="tungrovirus">tungrovirus</option>
+        <option id="mildew">mildew</option>
+        <option id="rootknot">rootknot</option>
+        <option id="nematodes">nematodes</option>
+        <option id="leafhoppers">leafhoppers</option>
+        <option id="planthoppers">planthoppers</option>
+        <option id="blast">blast</option>
+        <option id="sheathblight">sheathblight</option>
+        <option id="leafspot">leafspot</option>
+        <option id="brownspot">brownspot</option>
+        <option id="rust">rust</option>
+        <option id="leafblight">leafblight</option>
+    </form>
+    <h1 style="background: white;padding: 20px;">Insecticides</h1>
+    <div class="d31">
+        <div class="pest-card aphids spidermites whiteflies" id="abacin">
+            <div class="img"><img src="images/abacin-crystalCropProtection.png" alt="pest"></div>
+            <p>Abacin Insecticide</p>
+            <p class="company">Crystal Crop Protection</p>
+        </div>
+        <div class="pest-card aphids whiteflies thrips" id="actara">
+            <div class="img"><img src="images/actara-syngenta.png" alt="pest"></div>
+            <p>actara Insecticide</p>
+            <p class="company">syngenta</p>
+        </div>
+        <div class="pest-card aphids whiteflies" id="admire">
+            <div class="img"><img src="images/admire-bayer.png" alt="pest"></div>
+            <p>Admire Insecticide</p>
+            <p class="company">bayer</p>
+        </div>
+        <div class="pest-card thrips whiteflies aphids caterpillars armyworm" id="alika">
+            <div class="img"><img src="images/alika-syngenta.jpg" alt="pest"></div>
+            <p>Alika Insecticide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card thrips whiteflies aphids caterpillars" id="ampligo">
+            <div class="img"><img src="images/ampligo-syngenta.png" alt="pest"></div>
+            <p>Ampligo Insecticide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card thrips whiteflies aphids caterpillars" id="anant">
+            <div class="img"><img src="images/anant-rallis.jpg" alt="pest"></div>
+            <p>Anant Insecticide</p>
+            <p class="company">Rallis</p>
+        </div>
+        <div class="pest-card aphids whiteflies spidermites" id="areva">
+            <div class="img"><img src="images/areva-dhanuka.png" alt="pest"></div>
+            <p>Areva Insecticide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card caterpillars leafborers thrips whiteflies aphids" id="benevia">
+            <div class="img"><img src="images/benevia-fmc.jpg" alt="pest"></div>
+            <p>Benevia Insecticide</p>
+            <p class="company">FMC</p>
+        </div>
+        <div class="pest-card caterpillars loopers armyworm" id="chess">
+            <div class="img"><img src="images/chess-syngenta.png" alt="pest"></div>
+            <p>Chess Insecticide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card aphids leafhoppers whiteflies thrips" id="confidor">
+            <div class="img"><img src="images/confidor-bayer.jpg" alt="pest"></div>
+            <p>Confidor Insecticide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card armyworm cutworm leafworm" id="coragen">
+            <div class="img"><img src="images/coragen-fmc.png" alt="pest"></div>
+            <p>Coragen Insecticide</p>
+            <p class="company">FMC</p>
+        </div>
+        <div class="pest-card armyworm loopers" id="delegate">
+            <div class="img"><img src="images/delegate-cortevaAgriscience.png" alt="pest"></div>
+            <p>Delegate Insecticide</p>
+            <p class="company">Corteva Agriscience</p>
+        </div>
+        <div class="pest-card aphids thrips whiteflies" id="ekalux">
+            <div class="img"><img src="images/ekalux-syngenta.jpg" alt="pest"></div>
+            <p>Ekalux Insecticide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card rootrot" id="em1">
+            <div class="img"><img src="images/em-1-dhanuka.png" alt="pest"></div>
+            <p>EM-1 Insecticide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card stemborers leaffolder tungrovirus" id="exponus">
+            <div class="img"><img src="images/exponus-basf.jpg" alt="pest"></div>
+            <p>Exponus Insecticide</p>
+            <p class="company">BASF</p>
+        </div>
+        <div class="pest-card rootrot mildew" id="ferterra">
+            <div class="img"><img src="images/ferterra-fmc.webp" alt="pest"></div>
+            <p>Ferterra Insecticide</p>
+            <p class="company">FMC</p>
+        </div>
+        <div class="pest-card stemborers rootknot nematodes" id="furadan3g">
+            <div class="img"><img src="images/furadan-3g-crystalcropprotection.jpg" alt="pest"></div>
+            <p>Furadan 3g Insecticide</p>
+            <p class="company">Crystal Crop Protection</p>
+        </div>
+        <div class="pest-card aphids whiteflies" id="gracia">
+            <div class="img"><img src="images/gracia-godrejAgrovet.jpg" alt="pest"></div>
+            <p>Gracia Insecticide</p>
+            <p class="company">Godrej Agrovet</p>
+        </div>
+        <div class="pest-card aphids thrips whiteflies stemborers" id="jump">
+            <div class="img"><img src="images/jump-bayer.png" alt="pest"></div>
+            <p>Jump Insecticide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card tungrovirus leaffolder thrips stemborers" id="karate">
+            <div class="img"><img src="images/karate-syngenta.jpg" alt="pest"></div>
+            <p>Karate Insecticide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card leafhoppers leaffolder armyworm cutworm" id="lancergold">
+            <div class="img"><img src="images/lancer-gold-upl.jpg" alt="pest"></div>
+            <p>Lancer Gold Insecticide</p>
+            <p class="company">UPL</p>
+        </div>
+        <div class="pest-card leaffolder leafhoppers tungrovirus armyworm stemborers" id="marshal">
+            <div class="img"><img src="images/marshal-fmc.png" alt="pest"></div>
+            <p>Marshal Insecticide</p>
+            <p class="company">FMC</p>
+        </div>
+        <div class="pest-card leaffolder thrips aphids" id="media">
+            <div class="img"><img src="images/media-dhanuka.png" alt="pest"></div>
+            <p>Media Insecticide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card stemborers leafhoppers armyworm" id="monostar">
+            <div class="img"><img src="images/monostar-SWAL.png" alt="pest"></div>
+            <p>Monostar Insecticide</p>
+            <p class="company">SWAL</p>
+        </div>
+        <div class="pest-card aphids thrips spidermites" id="movento">
+            <div class="img"><img src="images/moventoEnergy-bayer.jpg" alt="pest"></div>
+            <p>Movento Energy Insecticide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card whiteflies spidermites thrips" id="oberon">
+            <div class="img"><img src="images/oberon-bayer.jpg" alt="pest"></div>
+            <p>Oberon Insecticide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card mites leafhoppers spidermites" id="omite">
+            <div class="img"><img src="images/omite-dhanuka.png" alt="pest"></div>
+            <p>Omite Insecticide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card leaffolder thrips" id="pager">
+            <div class="img"><img src="images/pager-dhanuka.png" alt="pest"></div>
+            <p>Pager Insecticide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card aphids whiteflies" id="phoskill">
+            <div class="img"><img src="images/phoskill-upl.png" alt="pest"></div>
+            <p>Phoskill Insecticide</p>
+            <p class="company">UPL</p>
+        </div>
+        <div class="pest-card armyworm" id="police">
+            <div class="img"><img src="images/police-gharda.jpg" alt="pest"></div>
+            <p>Police Insecticide</p>
+            <p class="company">Gharda</p>
+        </div>
+        <div class="pest-card tungrovirus aphids whiteflies leafhoppers" id="rogor">
+            <div class="img"><img src="images/rogor-fmc.jpg" alt="pest"></div>
+            <p>Rogor Insecticide</p>
+            <p class="company">FMC</p>
+        </div>
+        <div class="pest-card aphids whiteflies spidermites" id="simodis">
+            <div class="img"><img src="images/simodis-syngenta.jpg" alt="pest"></div>
+            <p>Simodis Insecticide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card planthoppers leafhoppers stemborers thrips" id="solomon">
+            <div class="img"><img src="images/solomon-bayer.png" alt="pest"></div>
+            <p>Solomon Insecticide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card tungrovirus leafhoppers caterpillars aphids thrips" id="tafgor">
+            <div class="img"><img src="images/tafgor-rallis.png" alt="pest"></div>
+            <p>Tafgor Insecticide</p>
+            <p class="company">Rallis</p>
+        </div>
+        <div class="pest-card stemborers leaffolder thrips" id="ulala">
+            <div class="img"><img src="images/ulala-upl.jpg" alt="pest"></div>
+            <p>Ulala Insecticide</p>
+            <p class="company">UPL</p>
+        </div>
+    </div>
+    <h1 style="background: white;padding: 20px;">Fungicides</h1>
+    <div class="d31">
+        <div class="pest-card blast sheathblight mildew" id="acrobat">
+            <div class="img"><img src="images/acrobatF-BASF.png" alt="pest"></div>
+            <p>Acrobat Fungicide</p>
+            <p class="company">BASF</p>
+        </div>
+        <div class="pest-card mildew blast" id="aliette">
+            <div class="img"><img src="images/alietteF-bayer.png" alt="pest"></div>
+            <p>Aliette Fungicide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card blast sheathblight mildew" id="amistar">
+            <div class="img"><img src="images/amistarF-syngenta.png" alt="pest"></div>
+            <p>Amistar Fungicide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card brownspot leafblight rust blast sheathblight leafspot" id="amistartop">
+            <div class="img"><img src="images/amistarTopF-syngenta.png" alt="pest"></div>
+            <p>Amistar Top Fungicide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card leafhoppers whiteflies thrips" id="abacil">
+            <div class="img"><img src="images/AmruthABACIL LiquidF-amruthOrganic.jpg" alt="pest"></div>
+            <p>ABACIL Liquid Fungicide</p>
+            <p class="company">Amruth Organic</p>
+        </div>
+        <div class="pest-card brownspot sheathblight leafspot" id="antracol">
+            <div class="img"><img src="images/antracolF-bayer.jpg" alt="pest"></div>
+            <p>Antracol Fungicide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card stemborers leaffolder whiteflies" id="avtar">
+            <div class="img"><img src="images/avtarF-indofil.jpg" alt="pest"></div>
+            <p>avtar Fungicide</p>
+            <p class="company">Indofil</p>
+        </div>
+        <div class="pest-card leafspot mildew blast" id="bavisti">
+            <div class="img"><img src="images/bavistiF-crystalCropProtection.png" alt="pest"></div>
+            <p>Bavisti Fungicide</p>
+            <p class="company">Crystal Crop Protection</p>
+        </div>
+        <div class="pest-card blast brownspot leafblight leafspot mildew" id="blitox">
+            <div class="img"><img src="images/blitoxF-rallis.png" alt="pest"></div>
+            <p>Blitox Fungicide</p>
+            <p class="company">Rallis</p>
+        </div>
+        <div class="pest-card leafblight leafspot mildew" id="bluecopper">
+            <div class="img"><img src="images/blueCopperF-crystalCropProtection.png" alt="pest"></div>
+            <p>Blue Copper Fungicide</p>
+            <p class="company">Crystal Crop Protection</p>
+        </div>
+        <div class="pest-card blast sheathblight leafspot" id="cabriotop">
+            <div class="img"><img src="images/cabrioTopF-BASF.png" alt="pest"></div>
+            <p>Cabrio Top Fungicide</p>
+            <p class="company">BASF</p>
+        </div>
+        <div class="pest-card brownspot leafblight leafspot rust" id="companion">
+            <div class="img"><img src="images/companionF-indofil.png" alt="pest"></div>
+            <p>Companion Fungicide</p>
+            <p class="company">Indofil</p>
+        </div>
+        <div class="pest-card blast rust stemborers leafhoppers" id="contafplus">
+            <div class="img"><img src="images/contafPlusF-rallis.png" alt="pest"></div>
+            <p>Contaf Plus Fungicide</p>
+            <p class="company">Rallis</p>
+        </div>
+        <div class="pest-card blast brownspot leafblight sheathblight leafspot rust" id="custodia">
+            <div class="img"><img src="images/custodiaF-adama.jpg" alt="pest"></div>
+            <p>custodia Fungicide</p>
+            <p class="company">Adama</p>
+        </div>
+        <div class="pest-card mildew leafspot blast" id="dhanukam45">
+            <div class="img"><img src="images/DhanukaM45F-dhanuka.png" alt="pest"></div>
+            <p>Dhanuka M45 Fungicide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card blast leafspot" id="folicur">
+            <div class="img"><img src="images/folicurF-bayer.jpg" alt="pest"></div>
+            <p>Folicur Fungicide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card blast leafblight mildew" id="foliogold">
+            <div class="img"><img src="images/folioGoldF-syngenta.jpg" alt="pest"></div>
+            <p>Folio Gold Fungicide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card" id="godiwasuper">
+            <div class="img"><img src="images/godiwaSuperF-dhanuka.png" alt="pest"></div>
+            <p>Godiwa Super Fungicide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card aphids thrips spidermites" id="hexadhanplus">
+            <div class="img"><img src="images/hexadhanPlusF-dhanuka.png" alt="pest"></div>
+            <p>Hexadhan Plus Fungicide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card blast leafspot" id="indofilm45">
+            <div class="img"><img src="images/IndofilM-45F-Indofil.jpg" alt="pest"></div>
+            <p>Indofil M-45 Fungicide</p>
+            <p class="company">Indofil</p>
+        </div>
+        <div class="pest-card leafspot sheathblight" id="infinito">
+            <div class="img"><img src="images/infinitoF-bayer.png" alt="pest"></div>
+            <p>Infinito Fungicide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card aphids whiteflies" id="kasub">
+            <div class="img"><img src="images/kasu-BF-dhanuka.png" alt="pest"></div>
+            <p>Kasu-B Fungicide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card whiteflies aphids" id="kavach">
+            <div class="img"><img src="images/kavachF-syngenta.png" alt="pest"></div>
+            <p>Kavach Fungicide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card leafblight mildew" id="luna">
+            <div class="img"><img src="images/lunaExperienceF-bayer.jpg" alt="pest"></div>
+            <p>Luna Experience Fungicide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card aphids whiteflies thrips" id="master">
+            <div class="img"><img src="images/masterF-rallis.png" alt="pest"></div>
+            <p>Master Fungicide</p>
+            <p class="company">Rallis</p>
+        </div>
+        <div class="pest-card leafblight rust aphids" id="nativo">
+            <div class="img"><img src="images/nativoF-bayer.png" alt="pest"></div>
+            <p>Nativo Fungicide</p>
+            <p class="company">Bayer</p>
+        </div>
+        <div class="pest-card aphids whiteflies" id="nisarga">
+            <div class="img"><img src="images/nisargaBioF-multiplex.jpg" alt="pest"></div>
+            <p>Nisarga Bio Fungicide</p>
+            <p class="company">Multiplex</p>
+        </div>
+        <div class="pest-card mildew leafblight" id="revus">
+            <div class="img"><img src="images/revusF-syngenta.png" alt="pest"></div>
+            <p>Revus Fungicide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card mildew rootrot" id="ridomil">
+            <div class="img"><img src="images/ridomilGoldF-syngenta.jpg" alt="pest"></div>
+            <p>Ridomil Gold Fungicide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card spidermites aphids whiteflies" id="roko">
+            <div class="img"><img src="images/rokoF-biostadt.png" alt="pest"></div>
+            <p>Roko Fungicide</p>
+            <p class="company">Biostadt</p>
+        </div>
+        <div class="pest-card aphids thrips leafhoppers" id="saaf">
+            <div class="img"><img src="images/saafF-upl.jpg" alt="pest"></div>
+            <p>Saaf Fungicide</p>
+            <p class="company">UPL</p>
+        </div>
+        <div class="pest-card sheathblight mildew leafspot" id="score">
+            <div class="img"><img src="images/scoreF-syngenta.png" alt="pest"></div>
+            <p>Score Fungicide</p>
+            <p class="company">Syngenta</p>
+        </div>
+        <div class="pest-card aphids whiteflies" id="sixer">
+            <div class="img"><img src="images/sixerF-dhanuka.png" alt="pest"></div>
+            <p>Sixer Fungicide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card aphids whiteflies spidermites" id="spectrum">
+            <div class="img"><img src="images/spectrumF-dhanuka.png" alt="pest"></div>
+            <p>Spectrum Fungicide</p>
+            <p class="company">Dhanuka</p>
+        </div>
+        <div class="pest-card rust mildew" id="tilt">
+            <div class="img"><img src="images/tiltF-CrystalCropProtection.png" alt="pest"></div>
+            <p>Tilt Fungicide</p>
+            <p class="company">Crystal Crop Protection</p>
+        </div>
+    </div>
+    <div class="d5">
+        <div class="contact">
+            <div>
+                <p>Contact us if you have any queries and know the deatails about government schemes and accurate mandi prices. Exact pesticides or insecticides for the diceases of th crop</p>
+                <a href="contact.jsp"><button>Contact us</button></a>
+            </div>
+            <img src="cartoon1.png" alt="contact us">
+        </div>
+        <h1 style="background: white;padding: 20px;">Feedback</h1>
+        <div class="contact">
+            <img src="feedback.webp" alt="feedback">
+            <form action="feedback.jsp" method="post">
+                <input name="nam" type="text" placeholder="Enter name" required><br>
+                <textarea name="feedback" rows="5" cols="70" placeholder="Ur Feedback" required></textarea>
+                <input type="hidden" name="redirecturl" value="pests.jsp">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- <h2 style="background: rgba(0,0,0,0.7);padding: 20px;color: white;">what our users say about us</h2>
+    <div class="d6">
+        <div class="roll">
+            <div class="feedback-card">
+                <div class="img"><img src="farmer1.jpg" alt=""></div>
+                <p>I'm impressed with the website's design and layout. It's easy to navigate and find the information I need. I've learned a lot about crop management and pest control.
+                </p>
+            </div>
+            <div class="feedback-card">
+                <div class="img"><img src="farmer2.avif" alt=""></div>
+                <p>The website has really helped me improve my farming techniques.The community section is also great for connecting with other farmers.</p>
+            </div>
+            <div class="feedback-card">
+                <div class="img"><img src="farmer3.jpg" alt=""></div>
+                <p>I'm not very tech-savvy, but the website is easy to use even for me. The language is simple and clear, and the information is relevant to my needs.The website is a great resource for farmers.</p>
+            </div>
+            <div class="feedback-card">
+                <div class="img"><img src="farmer4.webp" alt=""></div>
+                <p>I've been using the website for a few months now, and I'm really impressed.The website is a great resource for farmers who want to improve their farming practices.</p>
+            </div>
+            <div class="feedback-card">
+                <div class="img"><img src="farmer5.jpg" alt=""></div>
+                <p>"I was surprised by the wealth of information available on the website. I've learned a lot about agricultural marketing and how to increase my income.</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="d9">
+        <div class="flex">
+            <div class="wrapper">
+                <div class="pest-info">
+                    <div class="img"><img src="images/em-1-dhanuka.png" alt="pest"></div>
+                    <h1 align="center">EM-1 Insecticide</h1>
+                    <h2 align="center" class="company">dhanuka</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum facere culpa in sequi et quam animi amet quae cum eius officiis enim, inventore quis id cupiditate accusantium, natus, alias autem quas nihil.</p>
+                    <i class="bi bi-x" id="close-info"></i>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <%@page import="java.sql.*"%>
+    <%@include file="connection.jsp"%>
+    <%
+    String usr=(String)session.getAttribute("usr");
+    String mail=(String)session.getAttribute("mail");
+    PreparedStatement p1 = null;
+    ResultSet rs1 = null;
+    PreparedStatement p2 = null;
+    ResultSet rs2 = null;
+    PreparedStatement p3 = null;
+    ResultSet rs3 = null;
+
+    %>
+    <div class="profile-box">
+        <div class="close"><b>Profile</b><i class="bi bi-x" id="pro-close"></i></div>
+        <div class="photo"><i class="bi bi-person-fill"></i></div>
+        <p><b>Username : </b><%=usr%></p>
+        <p><b>E-mail &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: </b><%=mail%></p>
+        <div class="pi" id="fb-q">My feedback & queries</div>
+        <div class="pi" id="post">My post</div>
+        <r id="logout">Logout</r>
+    </div>  
+    <div class="fbq">
+        <i class="bi bi-arrow-left" id="fb-close"></i>
+        <div class="fbroll">
+            <div class="fb">
+                <h3>Feedback</h3>
+                <ul style="list-style: none;">
+                <%
+                try{
+                    p1=con.prepareStatement("select feedback from farmerfeedback where username=?");
+                    p1.setString(1,usr);
+                    rs1= p1.executeQuery();
+                    if(rs1.next()){
+                        do{%>
+                            <li><%=rs1.getString(1)%></li>
+                      <%}while(rs1.next());
+                    }
+                    else{%>
+                        <li>No Feedback</li>
+                  <%}%>
+               
+                </ul>
+            </div>
+            <div class="qr">
+                <h3>Queries</h3>
+                <ul style="list-style: none;">
+                <%
+                    p2=con.prepareStatement("select contactinfo from contactform where username=?");
+                    p2.setString(1,usr);
+                    rs2= p2.executeQuery();
+                    if(rs2.next()){
+                        do{%>
+                            <li><%=rs2.getString(1)%></li>
+                      <%}while(rs2.next());
+                    }
+                    else{%>
+                        <li>No queries</li>
+                  <%}%>
+                
+                </ul>
+            </div>
+        </div>
+    </div> 
+    <div class="post-box">
+        <i class="bi bi-arrow-left" id="pb-close"></i>
+        <div class="pbroll">
+            <%
+               p3 = con.prepareStatement("select * from sellbuy where username=?");
+               p3.setString(1,usr);
+               rs3 = p3.executeQuery();
+               if(rs3.next()){
+                   do{%>
+                       <div class="post-card">
+                           <img src="<%=rs3.getString(3)%>.webp" alt="crop">
+                           <p><%=rs3.getString(4)%> Quintals</p>
+                           <p><b>Name : </b><%=rs3.getString(1)%></p>
+                           <p><b>Ph.no : </b><%=rs3.getString(5)%></p>
+                           <p><b>Address : </b><%=rs3.getString(6)%></p>
+                           <p><b><%=rs3.getString(2)%></b></p>
+                       </div>       
+                   
+               <%  }while(rs3.next());
+               }
+               else{%>
+                   <h3 align="center" style="padding: 20px;">No Posts</h3>
+             <%}
+               
+            }
+            catch(Exception e){
+                out.println("<script>alert('Error..."+e.getMessage()+"');</script>");
+            } 
+            finally{
+                try{
+                    if(con != null)
+                        con.close();
+                    if(p1 != null)
+                        p1.close();
+                    if(rs1 != null)
+                        rs1.close();
+                    if(p2 != null)
+                        p2.close();
+                    if(rs2 != null)
+                        rs2.close();
+                    if(p3 != null)
+                        p3.close();
+                    if(rs3 != null)
+                        rs3.close();
+                }
+                catch(Exception e){
+                    out.println("<script>alert('database error..."+e.getMessage()+"');</script>");                }
+            }%>
+        </div>
+    </div>     
+    <div class="logout-box">
+        <i class="bi bi-send-check-fill"></i>&nbsp&nbsp&nbsp <b>Confirmation</b>
+        <p>Do you want to Logout</p>
+        <div>
+            <a href="home.html"><button style="background: none;color: black;">yes</button></a>
+            <button id="logout-close">stay</button>
+        </div>
+    </div>
+
+    <%
+    String res = null;
+    res=request.getParameter("res");
+    if(res != null){%>
+        <div class="success">
+            <b>Submitted Successfully &nbsp;&nbsp;&nbsp;</b><i class="bi bi-x" onclick="suc()"></i>
+        </div>
+  <%}%>
+
+    <div class="footer">
+        <ul class="foot">
+            <li><a href="home.jsp">home</a></li>
+            <li><a href="schemes.jsp">schemes</a></li>
+            <li><a href="prices.jsp">prices</a></li>
+            <li><a class="nav-page" href="#">pests</a></li>
+            <li><a href="about.jsp">about</a></li>
+            <li><a href="contact.jsp">contact</a></li>
+        </ul>
+        <div class="footer-mid"><div class="line"></div></div>
+        <div class="social">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+    </div>
+    <div class="no" id="google_translate_element"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,te',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="script.js"></script>
+    <script src="pest.js"></script>
+</body>    
+</html>

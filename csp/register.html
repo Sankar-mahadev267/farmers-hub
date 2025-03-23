@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+</head>
+<body>
+    <form action="register.jsp" method="post" onsubmit="return formvalidate()">
+        <div class="login" style="width: 320px;">
+            <h2>Register</h2>
+            <div class="input-box">
+              <input type="text" name="u1" id="user" placeholder="Username">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" name="m" id="email" value="abc@gmail.com">
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="New Password" required name="p1" id="np">
+              <i class="bi bi-lock-fill"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Re-type Password" required name="rp" id="rp">
+                <i class="bi bi-lock-fill"></i>
+            </div>
+            <br>
+            <div class="btn"><button type="submit">Register</button></div>
+            <br><br>
+        </div>
+    </form>
+    <script>
+
+        function formvalidate(){
+            var np=document.getElementById("np").value;
+            var rp=document.getElementById("rp").value;
+            if(np!=rp){
+                alert('New password and the re-typed password are not same');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
