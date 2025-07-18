@@ -1,4 +1,4 @@
-# 🧑‍🌾 Doctor Appointment App
+# 🧑‍🌾 Farmer's Hub
 
 farmers hub is an website for farmers to get the agricultural information like,getting the information about current government schemes ,market prices for different crops, pesticides for different crop diseases. Farmers also can post their crop information in the website to attract potetial buyyers.they can also get the live weather information.
 
