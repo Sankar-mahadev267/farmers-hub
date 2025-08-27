@@ -40,7 +40,6 @@ farmers hub is an website for farmers to get the agricultural information like,g
 <img width="500" alt="Screenshot 2024-11-12 232925" src="https://github.com/user-attachments/assets/eb01aaec-34ec-43a3-83f2-26d41f70d4bd" />
 <img width="500" alt="Screenshot 2024-11-12 233750" src="https://github.com/user-attachments/assets/30f319a3-645f-4dea-b872-15fb20f25b50" />
 <img width="500" alt="Screenshot 2024-11-16 202439" src="https://github.com/user-attachments/assets/8c638b82-2097-42cc-86f8-aa19da83bf86" />
-<img width="500" alt="Screenshot 2024-11-16 202624" src="https://github.com/user-attachments/assets/c80f792c-ad0b-49a1-a6d9-332d4f7a7122" />
 
 
 ## 🖥️System Requirements :
